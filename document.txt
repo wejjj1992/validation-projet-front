@@ -1,0 +1,20 @@
+//Installation de React :
+npm install --save create-react-app
+create-react-app front
+
+https://awesome-react.fr/2020/02/16/reactjs-authentication-authentification-tutorial-francais/
+https://medium.com/@axel.marciano/votre-premi%C3%A8re-application-en-react-node-express-mongodb-5ab0dc531091
+
+yarn start
+npm run build   
+
+npm install --save  react-router-dom  --force
+https://reactrouter.com/web/example/query-parameters
+npm install --save prop-types
+npm install axios
+https://www.digitalocean.com/community/tutorials/react-axios-react
+// login 
+https://www.cluemediator.com/login-app-create-login-form-in-reactjs-using-secure-rest-api
+https://gridjs.io/docs/install/ 
+
+npm install moment --save
