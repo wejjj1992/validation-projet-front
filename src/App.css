@@ -1,0 +1,13 @@
+.nav-link {
+    color:white;
+}
+.product .text-card {
+    min-height: 300px;
+}
+.product .card:hover {
+    border-color: yellowgreen;
+ 
+}
+.nav-link.active {
+    background-color:red ;
+}

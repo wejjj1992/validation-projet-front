@@ -6,8 +6,8 @@ import './login.css';
 function Login(props) {
 
   const [loading, setLoading] = useState(false);
-  const username = useFormInput('test@gmail.com');
-  const password = useFormInput('test');
+  const username = useFormInput('admin@admin.com');
+  const password = useFormInput('admin');
   const [error, setError] = useState(null);
 
   // handle button click of login form

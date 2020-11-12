@@ -27,6 +27,8 @@ class App extends Component {
     return (
       <Router>
         <Switch>
+
+          {/* route  boutique */}
           <Route exact path="/">
             <Home />
           </Route>
@@ -35,7 +37,7 @@ class App extends Component {
           <PublicRouteBoutique path="/login" component={Login} />
           <PrivateRouteBoutique path="/mes-commandes" component={Orders} />
           <PrivateRouteBoutique path="/profil" component={Profile} />
-
+          {/* route admin */}
           <PrivateRoute path="/admin/products/new" component={ProductsNewAdmin} />
           <PrivateRoute path="/admin/products" component={ProductsAdmin} />
           <PrivateRoute path="/admin/orders" component={OrdersAdmin} />
