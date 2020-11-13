@@ -49,9 +49,9 @@ function Login(props) {
                                     <label htmlFor="inputPassword" className="sr-only">Password</label>
                                     <input type="password" id="inputPassword" className="form-control" {...password} autoComplete="new-password" required />
                                     {error && <><small style={{ color: 'red' }}>{error}</small><br /></>}<br />
-                                    <input className="btn btn-lg btn-primary btn-block text-uppercase" type="button" value={loading ? 'Loading...' : 'Se Connecter'} onClick={handleLogin} disabled={loading} />
+                                    <input className="btn btn-success btn-block text-uppercase" type="button" value={loading ? 'Loading...' : 'Se Connecter'} onClick={handleLogin} disabled={loading} />
+                                    <Link className="btn btn-primary btn-block text-uppercase" to="/inscription"> Inscription </Link>
                                 </form>
-                                <Link className="btn btn-lg btn-primary btn-block text-uppercase" to="/inscription"> Inscription </Link>
                             </div>
                         </div>
                     </div>

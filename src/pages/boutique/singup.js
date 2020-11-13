@@ -3,6 +3,7 @@ import Header from '../../components/Header';
 import './boutique.css';
 import { getCartSession, getInfoCartSession, setCustomerSession } from '../../services/Common';
 import api from '../../services/ApiNoS';
+import { Link } from 'react-router-dom';
 
 
 export default class Singup extends Component {
@@ -68,10 +69,10 @@ export default class Singup extends Component {
                 <Header guesses={this.state.guesses} />
                 <main role="main" className="flex-shrink-0">
                     <div className="container container-body">
-                        <div className="row">
-                            <div className="col-md-8 order-md-1">
+                        <div className="row my-3">
+                            <div className="col-md-6 offset-md-3">
                                 {this.state.error && <><div className="alert alert-danger" role="alert"> {this.state.error}</div></>}
-                                <h4 className="mb-3">Inscription</h4>
+                                <h4 className="mb-3 text-center">Inscription</h4>
                                 <form className="needs-validation" onSubmit={this.handleSubmit} >
                                     <div className="mb-3">
                                         <label htmlFor="username">Nom et prenom</label>
@@ -114,7 +115,8 @@ export default class Singup extends Component {
                                         <input value={this.state.tel} onChange={this.handleChange} type="text" className="form-control" name="tel" id="tel" placeholder="Téléphone" />
                                     </div>
                                     <hr className="mb-4" />
-                                    <button className="btn btn-primary btn-lg btn-block" type="submit">s'inscrire</button>
+                                    <button className="btn btn-success btn-block text-uppercase" type="submit">S'inscrire</button>
+                                    <Link className="btn btn-primary btn-block text-uppercase" to="/login"> Connecter </Link>
                                 </form>
                             </div>
                         </div>
