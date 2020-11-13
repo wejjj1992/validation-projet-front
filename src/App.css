@@ -11,3 +11,11 @@
 .nav-link.active {
     background-color:red ;
 }
+ 
+#admin-products .table > tbody > tr > td {
+    vertical-align: middle;
+}
+
+body { 
+    background-color:#2d445a36 !important;
+}

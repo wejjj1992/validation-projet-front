@@ -18,6 +18,7 @@ import Login from './pages/boutique/login';
 import Orders from './pages/boutique/orders';
 import Profile from './pages/boutique/profile';
 import PublicRouteAllBoutique from './services/PublicRouteAllBoutique';
+import ProductsUpdateAdmin from './pages/admin/productsUpdate';
 
 
 class App extends Component {
@@ -39,6 +40,7 @@ class App extends Component {
           <PrivateRouteBoutique path="/profil" component={Profile} />
           {/* route admin */}
           <PrivateRoute path="/admin/products/new" component={ProductsNewAdmin} />
+          <PrivateRoute path="/admin/products/:id" component={ProductsUpdateAdmin} />
           <PrivateRoute path="/admin/products" component={ProductsAdmin} />
           <PrivateRoute path="/admin/orders" component={OrdersAdmin} />
           <PrivateRoute path="/admin/customers" component={CustomersAdmin} />
